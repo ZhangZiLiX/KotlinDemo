@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener ,LoginConstract.I
         if(userName!=null||!userName.equals("") && userPaw!=null||!userPaw.equals("")){
             params.put("phone",userName)
             params.put("pwd",userPaw)
-            //使用Presenter层进行请求
+            //  使用Presenter层进行请求
             loginPresenter.login(params,this)
         }
 
